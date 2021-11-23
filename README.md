@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Simple color button app
+
+
+## Testing React with Jest and Testing Library
+- Test interactivity using fireEvent
+- jest-dom-assertions:
+    - toBeEnabled()
+    - toBeDisabled()
+    - toBeChecked()
+- getByRole option { name: }
+- Jest describe to group tests
+- Unit testing fucntions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
