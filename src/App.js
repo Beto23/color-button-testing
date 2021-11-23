@@ -11,13 +11,13 @@ function App() {
   }
 
   const handleOnChangeCheckBox = (e) => {
-    setButtonDisabled(e.target.checked)
+    setButtonDisabled(e.target.checked);
   }
 
   return (
     <div>
       <button
-        style={{ backgroundColor: buttonColor }}
+        style={{ backgroundColor: buttonDisabled ? 'gray' : buttonColor }}
         onClick={handleButtonClick}
         disabled={buttonDisabled}
       >
@@ -26,7 +26,7 @@ function App() {
 
       <input
         type="checkbox"
-        id='disabled-button-checkbox'
+        id="disabled-button-checkbox"
         defaultChecked={buttonDisabled}
         onChange={handleOnChangeCheckBox}
       />
